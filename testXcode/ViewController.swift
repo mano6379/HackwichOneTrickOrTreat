@@ -10,10 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var backGroundImageView: UIImageView!
+    
+    @IBOutlet var knockKnockButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        knockKnockButton.setTitle("Knock Knock", for: [])
+        knockKnockButton.tintColor=UIColor.orange
+        backGroundImageView.image=UIImage(named:"doorImage")
+        // Do any additional setup after loading the view.
     }
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
